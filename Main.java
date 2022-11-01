@@ -14,24 +14,41 @@ class Main {
     //$7-match 2 +powerball
     //$4-match 1 + powerball, 0 + powerball
 
-    public static int[] makeTicket(){
-      int[] ticket = {0,0,0,0,0,0};
-      int counter = 0;
-      while(counter<6){
-        int numToTry;
-        if(counter <5){
-          numToTry= (int)(Math.random()* 69 +1);
-          boolean unique = true;
-          for(int = i; i< )
-          
+    int[] myTicket = makeTicket();
+
+    for(int i = 0; i < myTicket.length; i++)
+    {
+      System.out.println(myTicket[i]);
+    }
+  }
+
+  public static int[] makeTicket(){
+    int[] ticket = {0,0,0,0,0,0};
+    int counter = 0;
+    while(counter<6){
+      int numToTry;
+      if(counter <5){
+        numToTry= (int)(Math.random()* 69 +1);
+        boolean unique = true;
+        for(int i = 0; i < counter; i++){
+          if(ticket[i] == numToTry)
+          {
+            unique = false;
+          }
         }
-        else{
-          numToTry = (int)(Math.random()*26 + 1);
+        if(unique){
           ticket[counter] = numToTry;
           counter++;
         }
       }
-    }
     
+      else{
+        numToTry = (int)(Math.random()*26 + 1);
+        ticket[counter] = numToTry;
+        counter++;
+      }
+    }
+
+    return ticket;
   }
 }
