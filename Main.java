@@ -16,7 +16,12 @@ class Main {
     //$4-match 1 + powerball, 0 + powerball
 
     int[] myTicket = makeTicket();
-    ArrayList<int[]> tickets = new Arraylist<Integer[]>();
+    ArrayList<int[]> tickets = new ArrayList<int[]>();
+
+    int counter = 0;
+    while(counter < 105){
+      tickets.add(makeTicket());
+    }
     
 
     for(int i = 0; i < myTicket.length; i++)
