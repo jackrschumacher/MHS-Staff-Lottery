@@ -21,9 +21,14 @@ class Main {
         int numToTry;
         if(counter <5){
           numToTry= (int)(Math.random()* 69 +1);
+          boolean unique = true;
+          for(int = i; i< )
+          
         }
         else{
           numToTry = (int)(Math.random()*26 + 1);
+          ticket[counter] = numToTry;
+          counter++;
         }
       }
     }
