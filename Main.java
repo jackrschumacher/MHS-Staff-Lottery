@@ -1,3 +1,4 @@
+import java.util.*;
 class Main {
   public static void main(String[] args) {
     //Powerball costs $2 per ticket
@@ -15,6 +16,8 @@ class Main {
     //$4-match 1 + powerball, 0 + powerball
 
     int[] myTicket = makeTicket();
+    ArrayList<int[]> tickets = new Arraylist<Integer[]>();
+    
 
     for(int i = 0; i < myTicket.length; i++)
     {
