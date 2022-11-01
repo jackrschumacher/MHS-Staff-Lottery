@@ -28,9 +28,9 @@ class Main {
     }
 
     int totalWinnings = 0;
-    for(int i = 0; i < tickets.size(); i++){
+    for (int i = 0; i < tickets.size(); i++) {
       totalWinnings += moneyWon(tickets.get(i), jackpot);
-    }   
+    }
     System.out.println(totalWinnings);
   }
 
@@ -76,7 +76,7 @@ class Main {
     }
     if (ticket[5] == winner[5]) {
       jackpotMatch++;
-    } 
+    }
     if (regularMatches == 5 && jackpotMatch == 1) {
       return 1200000000;
     } else if (regularMatches == 5 && jackpotMatch == 0) {
@@ -94,7 +94,7 @@ class Main {
       return 4;
     } else {
       return 0;
-    
+
     }
   }
 }
