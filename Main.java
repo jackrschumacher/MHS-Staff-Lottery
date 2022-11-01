@@ -18,7 +18,13 @@ class Main {
       int[] ticket = {0,0,0,0,0,0};
       int counter = 0;
       while(counter<6){
-        int numToTry = (int)(Math.random()* 69 +1);
+        int numToTry;
+        if(counter <5){
+          numToTry= (int)(Math.random()* 69 +1);
+        }
+        else{
+          numToTry = (int)(Math.random()*26 + 1);
+        }
       }
     }
     
