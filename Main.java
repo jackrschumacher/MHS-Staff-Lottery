@@ -61,7 +61,26 @@ class Main {
     return ticket;
   }
 
-  public static int moneyWon(int[] ticket){
+  public static int moneyWon(int[] ticket, int[] winner){
+  int regularMatches = 0;
+  int jackpotMatch = 0;
+
+    for (int i = 0; i < 5; i++) {
+      for (int j = 0; j < 5; j++) {
+        if (ticket[i] == winner[j]) {
+          regularMatches++;
+        }
+      }
+    }
+    if (ticket[5] == winner[5]) {
+      jackpotMatch++;
+    }
+    if (regularMatches == 5 && jackpotMatch == 1) {
+      return 120000000;
+    }
+    if (regularMatches == 5 && jackpotMatch == 0) {
+      return 1000000;
+    }
     
   }
 }
