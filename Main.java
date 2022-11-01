@@ -29,8 +29,9 @@ class Main {
 
     int totalWinnings = 0;
     for(int i = 0; i < tickets.size(); i++){
-      totalWinnings += moneyWon(tickets.get(i), jackpot)
-    }
+      totalWinnings += moneyWon(tickets.get(i), jackpot);
+    }   
+    System.out.println(totalWinnings);
   }
 
   public static int[] makeTicket() {
