@@ -15,14 +15,18 @@ class Main {
     // $7-match 3
     // $7-match 2 +powerball
     // $4-match 1 + powerball, 0 + powerball
+    Scanner input = new Scanner(System.in);
 
     int[] jackpot = makeTicket();
 
     int[] myTicket = makeTicket();
     ArrayList<int[]> tickets = new ArrayList<int[]>();
 
+    System.out.println("How much money would you like to put into the lottery?");
+    int amountWanted = input.nextInt();
+    
     int counter = 0;
-    while (counter < 105) {
+    while (counter < amountWanted) {
       tickets.add(makeTicket());
       counter++;
     }
