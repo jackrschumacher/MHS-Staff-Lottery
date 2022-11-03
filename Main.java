@@ -24,6 +24,7 @@ class Main {
 
     System.out.println("How much money would you like to put into the lottery?");
     int amountWanted = input.nextInt();
+    int differenceAmount = 0;
     
     int counter = 0;
     while (counter < amountWanted) {
@@ -36,6 +37,8 @@ class Main {
       totalWinnings += moneyWon(tickets.get(i), jackpot);
     }
     System.out.println("You get: "+totalWinnings+" Dollars back.");
+    differenceAmount = totalWinnings - amountWanted;
+    System.out.println("Your difference is "+differenceAmount+"Dollars");
   }
 
   public static int[] makeTicket() {
