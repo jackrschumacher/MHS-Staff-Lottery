@@ -35,7 +35,7 @@ class Main {
     for (int i = 0; i < tickets.size(); i++) {
       totalWinnings += moneyWon(tickets.get(i), jackpot);
     }
-    System.out.println(totalWinnings);
+    System.out.println("You get: "+totalWinnings+" Dollars back.");
   }
 
   public static int[] makeTicket() {
