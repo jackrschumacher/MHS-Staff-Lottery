@@ -22,8 +22,9 @@ class Main {
     int[] myTicket = makeTicket();
     ArrayList<int[]> tickets = new ArrayList<int[]>();
 
-    System.out.println("How much money would you like to put into the lottery?");
+    System.out.println("How many tickets would you life to buy?");
     int amountWanted = input.nextInt();
+    amountWanted = amountWanted *2;
     int differenceAmount = 0;
     
     int counter = 0;
@@ -38,7 +39,7 @@ class Main {
     }
     System.out.println("You get: "+totalWinnings+" Dollars back.");
     differenceAmount = totalWinnings - amountWanted;
-    System.out.println("Your difference is "+differenceAmount+"Dollars");
+    System.out.println("Your difference is "+differenceAmount+" Dollars");
   }
 
   public static int[] makeTicket() {
