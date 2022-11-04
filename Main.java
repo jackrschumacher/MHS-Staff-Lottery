@@ -22,7 +22,7 @@ class Main {
     int[] myTicket = makeTicket();
     ArrayList<int[]> tickets = new ArrayList<int[]>();
 
-    System.out.println("How many tickets would you life to buy?");
+    System.out.println("How many tickets would you like to buy?");
     int amountWanted = input.nextInt();
     amountWanted = amountWanted *2;
     int differenceAmount = 0;
